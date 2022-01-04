@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class DeleteManufacturerController extends HttpServlet {
-    private static final String ALL_MANUFACTURERS_URL = "/manufacturers/all";
+    private static final String ALL_MANUFACTURERS_URL = "/manufacturers/";
     private static final Injector injector = Injector.getInstance("taxi");
     private final ManufacturerService manufacturerService = (ManufacturerService) injector
             .getInstance(ManufacturerService.class);

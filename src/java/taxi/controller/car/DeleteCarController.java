@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class DeleteCarController extends HttpServlet {
-    private static final String ALL_CARS_URL = "/cars/all";
+    private static final String ALL_CARS_URL = "/cars/";
     private static final Injector injector = Injector.getInstance("taxi");
     private final CarService carService = (CarService) injector
             .getInstance(CarService.class);
